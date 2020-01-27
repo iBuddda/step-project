@@ -1,0 +1,26 @@
+String^ parse_value(String^ source, Char^ key, int index)
+		{
+			int a = 0;
+			int b = source->Length;
+			array<Char>^ c = source->ToCharArray();
+			String^ d = "";
+			int e = 0;
+			while (a < b) {
+				if (c[a] == Convert::ToChar(key)) {
+					if (e == index) {
+						return d;
+						exit;
+					}
+					else {
+						d = "";
+						e = e + 1;
+					}
+				}
+				else {
+					d = d + Convert::ToString(c[a]);
+				}
+				a = a + 1;
+			}
+			return "NULL";
+
+		}

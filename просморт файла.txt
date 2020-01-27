@@ -1,0 +1,28 @@
+ПРОСМОТР ФАЙЛА
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, " rus");
+	string  file_path = "МЕСТО ФАЙЛА";
+	ifstream file_loader;
+	file_loader.open(file_path);
+	int a = 0;
+	string b = "";
+		int c = 0;
+		while (not file_loader.eof()) {
+			getline(file_loader, b);
+			cout << b + "\n";
+			c = c + b.length();
+			a = a + 1;
+	}
+		cout << "\nфайл: " + file_path + "загружен\n";
+		cout << "всего символов в файле:" + std::to_string(c) + "\n";
+		cout << "всего строк в файле::" + std::to_string(a) + "\n";
+		file_loader.close();
+
+
+}

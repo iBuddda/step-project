@@ -1,0 +1,5 @@
+﻿  MyForm.cpp
+C:\Users\User\source\repos\slepogin_cli_example_for_lessons\slepogin_cli_example_for_lessons\MyForm.cpp(8,32): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  slepogin_cli_example_for_lessons.vcxproj -> C:\Users\User\source\repos\slepogin_cli_example_for_lessons\Debug\slepogin_cli_example_for_lessons.exe
